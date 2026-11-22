@@ -1,0 +1,218 @@
+{
+  "name": "abyssal_watcher",
+  "displayName": "深渊凝视者",
+  "format": "free",
+  "resolution": 128,
+  "palette": {
+    "chitin_dark": "#1b2436",
+    "chitin_mid": "#2b3a55",
+    "brass_trim": "#c89b45",
+    "eye_core": "#49f5e8",
+    "abyss_purple": "#52326e"
+  },
+  "groups": [
+    {
+      "name": "root",
+      "origin": [0, 0, 0],
+      "cubes": [],
+      "children": [
+        {
+          "name": "mantle_core",
+          "origin": [0, 18, 0],
+          "cubes": [
+            {
+              "name": "upper_dome",
+              "from": [-5, 16, -5],
+              "to": [5, 25, 5],
+              "origin": [0, 20, 0],
+              "material": "chitin_dark",
+              "trim": "brass_trim",
+              "pattern": "bevel",
+              "faceOverrides": {
+                "north": { "material": "eye_core", "trim": "brass_trim", "pattern": "glow" }
+              }
+            },
+            {
+              "name": "lower_collar",
+              "from": [-6, 13, -6],
+              "to": [6, 16, 6],
+              "origin": [0, 14, 0],
+              "material": "chitin_mid",
+              "trim": "brass_trim",
+              "pattern": "scales"
+            }
+          ],
+          "children": [
+            {
+              "name": "crown_fin_left",
+              "origin": [-4, 24, 0],
+              "rotation": [0, 0, -18],
+              "cubes": [
+                {
+                  "name": "fin_blade_left",
+                  "from": [-6, 23, -2],
+                  "to": [-4, 30, 3],
+                  "origin": [-4, 24, 0],
+                  "material": "abyss_purple",
+                  "trim": "brass_trim",
+                  "pattern": "stripe"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "crown_fin_right",
+              "origin": [4, 24, 0],
+              "rotation": [0, 0, 18],
+              "cubes": [
+                {
+                  "name": "fin_blade_right",
+                  "from": [4, 23, -2],
+                  "to": [6, 30, 3],
+                  "origin": [4, 24, 0],
+                  "material": "abyss_purple",
+                  "trim": "brass_trim",
+                  "pattern": "stripe"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "tentacle_front_left",
+              "origin": [-4, 13, -4],
+              "cubes": [
+                {
+                  "name": "tfl_upper",
+                  "from": [-5, 7, -5],
+                  "to": [-3, 13, -3],
+                  "origin": [-4, 13, -4],
+                  "material": "chitin_mid",
+                  "pattern": "bevel"
+                }
+              ],
+              "children": [
+                {
+                  "name": "tentacle_front_left_tip",
+                  "origin": [-4, 7, -4],
+                  "cubes": [
+                    {
+                      "name": "tfl_lower",
+                      "from": [-4.7, 1, -4.7],
+                      "to": [-3.3, 7, -3.3],
+                      "origin": [-4, 7, -4],
+                      "material": "abyss_purple",
+                      "pattern": "stripe"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "tentacle_front_right",
+              "origin": [4, 13, -4],
+              "cubes": [
+                {
+                  "name": "tfr_upper",
+                  "from": [3, 7, -5],
+                  "to": [5, 13, -3],
+                  "origin": [4, 13, -4],
+                  "material": "chitin_mid",
+                  "pattern": "bevel"
+                }
+              ],
+              "children": [
+                {
+                  "name": "tentacle_front_right_tip",
+                  "origin": [4, 7, -4],
+                  "cubes": [
+                    {
+                      "name": "tfr_lower",
+                      "from": [3.3, 1, -4.7],
+                      "to": [4.7, 7, -3.3],
+                      "origin": [4, 7, -4],
+                      "material": "abyss_purple",
+                      "pattern": "stripe"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "animations": {
+    "idle": {
+      "loop": "loop",
+      "length": 2.0,
+      "bones": {
+        "mantle_core": {
+          "position": [
+            { "time": 0, "value": [0, 0, 0] },
+            { "time": 1.0, "value": [0, 1.5, 0], "interpolation": "catmullrom" },
+            { "time": 2.0, "value": [0, 0, 0] }
+          ]
+        },
+        "tentacle_front_left": {
+          "rotation": [
+            { "time": 0, "value": [8, 0, 5] },
+            { "time": 1.0, "value": [-12, 0, -5] },
+            { "time": 2.0, "value": [8, 0, 5] }
+          ]
+        },
+        "tentacle_front_left_tip": {
+          "rotation": [
+            { "time": 0, "value": [-10, 0, 0] },
+            { "time": 1.0, "value": [20, 0, 0] },
+            { "time": 2.0, "value": [-10, 0, 0] }
+          ]
+        },
+        "tentacle_front_right": {
+          "rotation": [
+            { "time": 0, "value": [-10, 0, -5] },
+            { "time": 1.0, "value": [10, 0, 5] },
+            { "time": 2.0, "value": [-10, 0, -5] }
+          ]
+        },
+        "tentacle_front_right_tip": {
+          "rotation": [
+            { "time": 0, "value": [18, 0, 0] },
+            { "time": 1.0, "value": [-14, 0, 0] },
+            { "time": 2.0, "value": [18, 0, 0] }
+          ]
+        }
+      }
+    },
+    "attack": {
+      "loop": "once",
+      "length": 1.0,
+      "bones": {
+        "mantle_core": {
+          "rotation": [
+            { "time": 0, "value": [0, 0, 0] },
+            { "time": 0.35, "value": [-12, 0, 0] },
+            { "time": 0.65, "value": [18, 0, 0] },
+            { "time": 1.0, "value": [0, 0, 0] }
+          ]
+        },
+        "tentacle_front_left": {
+          "rotation": [
+            { "time": 0, "value": [0, 0, 0] },
+            { "time": 0.4, "value": [-55, 0, 12] },
+            { "time": 1.0, "value": [0, 0, 0] }
+          ]
+        },
+        "tentacle_front_right": {
+          "rotation": [
+            { "time": 0, "value": [0, 0, 0] },
+            { "time": 0.4, "value": [-55, 0, -12] },
+            { "time": 1.0, "value": [0, 0, 0] }
+          ]
+        }
+      }
+    }
+  }
+}
