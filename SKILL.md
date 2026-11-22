@@ -1,6 +1,6 @@
 ---
 name: creature-engineering-designer
-description: Design high-fidelity creature and character visual concept sheets and full biological engineering blueprints as images - five-view turnaround, detail studies, exploded modules, material and UV concept, bone rig, action sets, keyframes and hitboxes, plus a dossier. Covers animals, mythical beasts, humanoids, eldritch, alien, undead, elemental, mechanical and hybrid species. Use when the user wants a creature design image, modeling reference sheet, or modular engineering blueprint. Do not use for 3D model files, rig exports, texture files, or standalone illustrations without engineering structure.
+description: Design Minecraft and Blockbench voxel-style creature and character visual concept sheets plus full biological engineering blueprints as images - five-view turnaround, detail studies, exploded modules, pixel-texture material and UV concept, bone rig, action sets, keyframes and hitboxes, plus a dossier. Covers animals, mythical beasts, humanoids, eldritch, alien, undead, elemental, mechanical and hybrid species. Use when the user wants a voxel creature design image, Minecraft-style modeling reference sheet, or modular engineering blueprint. Do not use for 3D model files, rig exports, texture files, or standalone illustrations without engineering structure.
 metadata:
   short-description: "Creature concept sheets & engineering blueprints"
 ---
@@ -78,12 +78,27 @@ metadata:
 
 生物名称、别名、分类、拓扑原型、参考体型、栖息环境、外观与材质、核心能力、行为习性、主要骨链、动作状态、工程规格备注。
 
+## 视觉风格硬约束：Minecraft / Blockbench 体素风
+
+本技能产出的所有图像必须是 **Minecraft / Blockbench 体素风格**，而不是写实、二次元、矢量扁平或自由曲面 3D：
+
+1. **几何**：全部由轴对齐立方体、长方体与阶梯状模块构成。禁止平滑曲面、有机流线、布料模拟与写实毛发。
+2. **轮廓**：像素化硬边，转角为直角或 45° 阶梯。禁止抗锯齿柔边、景深虚化与镜头光晕。
+3. **贴图**：表现 `16×16` 或 `32×32` 像素贴图质感，每材质 3–4 阶明暗，可带轻微抖动/噪点。禁止照片级纹理。
+4. **光照**：统一方向主光 + 环境遮蔽色块，阴影硬边或分阶。禁止柔和体积光与摄影棚渲染。
+5. **视角**：正/左/背/右视图用正交投影；45° 视图用等距（isometric）投影。禁止自由透视与广角畸变。
+6. **调色板**：每个生物 8–14 个主色，饱和度克制；能量件允许 1–2 个高饱和发光色。
+7. **细节表达**：鳞片、羽毛、毛发、触手、肌肉等一律用像素图案与阶梯几何表达，不用曲线笔刷。
+8. **禁止项**：写实皮肤、镜面金属反射、光滑渐变、动态模糊、景深、摄影棚灯光、非方块化解剖曲线。
+
+若用户明确要求其他风格，先按上述体素风出图，再说明可切换风格；不得默认输出写实渲染。
+
 ## 视觉语言
 
 - 深蓝黑、深青黑或与物种契合的暗色工程底板，可带极细工程网格。
 - 低饱和暗金或冷铜细线分区，避免粗重边框。
-- 精致 3D 模块化拼装质感：块面层次清楚，兼具生物解剖韵律与可建模零件感。
-- 统一光照方向、接触阴影与材质语言。
+- 精致 Minecraft / Blockbench 体素拼装质感：块面层次清楚，兼具生物解剖韵律与可建模零件感。
+- 统一光照方向、硬边接触阴影与像素材质语言。
 - 标题与标签清晰简洁，不使用大段拥挤小字。
 
 ## 一致性规则
