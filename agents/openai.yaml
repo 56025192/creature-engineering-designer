@@ -1,4 +1,4 @@
 interface:
   display_name: "生物工程设计大师"
-  short_description: "Creature concept sheets & engineering blueprints"
-  default_prompt: "使用 $creature-engineering-designer 为目标生物出高清视觉设定图或完整工程构造图。"
+  short_description: "Voxel creature sheets & dynamic engineering boards"
+  default_prompt: "使用 $creature-engineering-designer 为目标生物出高清视觉设定图、动态工程展示图或动画展示图。"
