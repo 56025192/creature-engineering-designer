@@ -1,4 +1,4 @@
 interface:
   display_name: "生物工程设计大师"
-  short_description: "All-archetype creature blueprints & Blockbench models"
-  default_prompt: "使用 $creature-engineering-designer 为目标生物设计工程构造图或生成 Blockbench 模型。"
+  short_description: "Creature concept sheets & engineering blueprints"
+  default_prompt: "使用 $creature-engineering-designer 为目标生物出高清视觉设定图或完整工程构造图。"
